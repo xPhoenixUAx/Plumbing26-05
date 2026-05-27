@@ -6,3 +6,55 @@
 @import url("./pages/about.css");
 @import url("./pages/contact.css");
 @import url("./pages/legal.css");
+
+@media (min-width: 1181px) {
+  .why-panel .why-copy {
+    max-width: min(500px, 34vw);
+  }
+
+  .why-panel .why-lead {
+    left: clamp(620px, 40vw, 720px);
+    right: auto;
+    max-width: min(360px, 22vw);
+  }
+}
+
+.final-cta-actions {
+  flex-wrap: wrap;
+}
+
+.phone-cta {
+  flex: 0 0 auto;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.final-cta-actions p {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .final-cta-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .phone-cta {
+    width: min(100%, 360px);
+    padding-right: 18px;
+  }
+
+  .final-cta-actions p {
+    flex-basis: auto;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 540px) {
+  .phone-cta {
+    width: 100%;
+    white-space: normal;
+  }
+}

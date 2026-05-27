@@ -284,9 +284,95 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 
+  .contact-methods {
+    gap: 14px;
+  }
+
+  .contact-card {
+    min-height: auto;
+    padding: 20px 18px 20px 64px;
+    border-radius: 22px;
+  }
+
+  .contact-icon {
+    left: 18px;
+    top: 20px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .contact-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .contact-card h3 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+  }
+
+  .contact-card p {
+    margin-bottom: 6px;
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+
+  .contact-card a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-size: .78rem;
+  }
+
   .form-shell {
-    padding: 30px 20px;
-    border-radius: 28px;
+    padding: 24px 16px;
+    border-radius: 22px;
+  }
+
+  .form-shell h2 {
+    font-size: 1.85rem;
+  }
+
+  .form-shell > p {
+    margin-top: 10px;
+    font-size: .9rem;
+    line-height: 1.45;
+  }
+
+  .form-grid {
+    gap: 11px;
+    margin-top: 20px;
+  }
+
+  .form-grid label,
+  .contact-form label {
+    gap: 5px;
+    font-size: .78rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    min-height: 46px;
+    padding: 11px 14px;
+    border-radius: 14px;
+    font-size: .86rem;
+  }
+
+  .contact-form textarea {
+    min-height: 92px;
+  }
+
+  .contact-form .btn {
+    min-height: 50px;
+    min-width: 0;
+    padding: 12px 58px 12px 18px;
+    font-size: .86rem;
+  }
+
+  .contact-form .btn::after {
+    right: 7px;
+    width: 36px;
+    height: 36px;
   }
 
   .contact-form textarea {

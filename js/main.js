@@ -69,6 +69,7 @@
       menu.classList.toggle("is-open", state);
       menu.setAttribute("aria-hidden", String(!state));
       open.setAttribute("aria-expanded", String(state));
+      if (!state) $$("details", menu).forEach((details) => { details.open = false; });
       if (state) close.focus();
     };
 
