@@ -1,0 +1,22 @@
+window.SITE_CONFIG = {
+  companyName: "PlumbConnect",
+  companyLegalName: "PlumbConnect Lead Network LLC",
+  companyId: "NETWORK-ID PCN-20486",
+  phone: "+15550192774",
+  phoneDisplay: "(555) 019-2774",
+  phoneButtonLabel: "Call for service",
+  email: "requests@plumbconnect.example",
+  whatsapp: "+15550192774",
+  whatsappDisplay: "WhatsApp",
+  addressLine1: "Lead coordination desk",
+  addressLine2: "No public storefront",
+  serviceArea: "Connecting homeowners, property managers, and small businesses with independent plumbing providers in participating service areas",
+  businessHours: "Request intake is available daily. Provider availability varies by location, workload, and job type.",
+  footerTextPrimary: "A plumbing request platform for customers who want a clearer first step before choosing a provider.",
+  footerTextSecondary: "Independent providers confirm availability, pricing, credentials, warranties, and service terms directly with customers.",
+  disclaimerShort: "PlumbConnect is an aggregator and request-matching platform, not a plumbing contractor.",
+  disclaimerFull: "Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.",
+  copyrightLine: "PlumbConnect Lead Network LLC. All rights reserved.",
+  ctaPrimary: "Request provider options",
+  ctaSecondary: "View all services"
+};

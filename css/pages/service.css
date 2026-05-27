@@ -1,0 +1,15 @@
+.service-intro-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.service-intro-list div {
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+}
+.service-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 760px) {
+  .service-intro-list, .service-gallery { grid-template-columns: 1fr; }
+}
