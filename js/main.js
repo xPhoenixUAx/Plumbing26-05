@@ -387,6 +387,61 @@
     });
   }
 
+  function setupCookieBanner() {
+    const storageKey = "plumbconnect_cookie_choice";
+    let storedChoice = null;
+    try {
+      storedChoice = window.localStorage.getItem(storageKey);
+    } catch (error) {
+      storedChoice = null;
+    }
+    if (storedChoice) return;
+
+    const isNested = window.location.pathname.includes("/services/");
+    const policyHref = `${isNested ? "../" : ""}cookie.html`;
+    const banner = document.createElement("section");
+    banner.className = "cookie-banner";
+    banner.setAttribute("role", "dialog");
+    banner.setAttribute("aria-label", "Cookie notice");
+    banner.innerHTML = `
+      <div class="cookie-banner-text">
+        <span class="eyebrow">Cookie notice</span>
+        <h2>We use cookies to keep the site working clearly.</h2>
+        <p>Essential cookies help forms, preferences, analytics, and security features work. You can accept optional cookies, reject them, or review the policy first.</p>
+        <a href="${policyHref}">Read Cookie Policy</a>
+      </div>
+      <div class="cookie-banner-actions">
+        <button class="cookie-btn secondary" type="button" data-cookie-choice="reject">Reject</button>
+        <button class="cookie-btn ghost" type="button" data-cookie-choice="manage">Manage</button>
+        <button class="cookie-btn primary" type="button" data-cookie-choice="accept">Accept</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+
+    requestAnimationFrame(() => banner.classList.add("is-visible"));
+
+    const saveChoice = (choice) => {
+      try {
+        window.localStorage.setItem(storageKey, choice);
+      } catch (error) {
+        document.cookie = `${storageKey}=${choice}; path=/; max-age=31536000; SameSite=Lax`;
+      }
+      banner.classList.remove("is-visible");
+      window.setTimeout(() => banner.remove(), 260);
+    };
+
+    $$("[data-cookie-choice]", banner).forEach((button) => {
+      button.addEventListener("click", () => {
+        const choice = button.getAttribute("data-cookie-choice");
+        if (choice === "manage") {
+          window.location.href = policyHref;
+          return;
+        }
+        saveChoice(choice || "accept");
+      });
+    });
+  }
+
   function setupReveal() {
     const items = $$("[data-reveal]");
     if (!items.length || !("IntersectionObserver" in window)) {
@@ -414,6 +469,7 @@
   setupReviewCarousel();
   setupZipForm();
   setupContactForm();
+  setupCookieBanner();
   setupReveal();
   if (window.lucide) window.lucide.createIcons();
 })();
