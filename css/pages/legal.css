@@ -1,2 +1,131 @@
-.legal-page { max-width: 850px; }
-.legal-page h2 { margin-top: 36px; margin-bottom: 12px; }
+.legal-hero {
+  padding: 138px 0 52px;
+  background: #fff;
+}
+
+.legal-hero .legal-page {
+  padding: 58px min(8vw, 92px);
+  border-radius: 34px;
+  background:
+    linear-gradient(90deg, rgba(28,86,164,.94), rgba(25,83,159,.9)),
+    url("../../img/home/service-leak.png") center / cover no-repeat;
+  color: #fff;
+}
+
+.legal-hero h1 {
+  color: #fff;
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-weight: 950;
+}
+
+.legal-hero p {
+  margin-top: 14px;
+  color: rgba(255,255,255,.82);
+  font-weight: 850;
+}
+
+.legal-section {
+  padding: 42px 0 88px;
+  background: #fff;
+}
+
+.legal-page {
+  max-width: 980px;
+}
+
+.legal-card {
+  padding: clamp(28px, 5vw, 62px);
+  border-radius: 34px;
+  background: #f0f6fb;
+  box-shadow: 0 22px 62px rgba(8,36,72,.07);
+}
+
+.legal-card h2 {
+  margin: 42px 0 12px;
+  color: #020b16;
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.legal-card h3 {
+  margin: 24px 0 10px;
+  color: #082448;
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 950;
+}
+
+.legal-card p,
+.legal-card li {
+  color: #526471;
+  line-height: 1.7;
+}
+
+.legal-intro {
+  color: #082448;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.legal-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 22px;
+}
+
+.legal-card a {
+  color: #0f78a2;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-contact-box {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 24px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(8,36,72,.07);
+}
+
+.legal-contact-box strong {
+  color: #020b16;
+  font-size: 1.1rem;
+  font-weight: 950;
+}
+
+.legal-contact-box span {
+  color: #526471;
+}
+
+.legal-disclaimer {
+  margin-top: 42px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(8,36,72,.12);
+  font-size: .86rem;
+}
+
+@media (max-width: 700px) {
+  .legal-hero {
+    padding: 112px 14px 28px;
+  }
+
+  .legal-hero .legal-page {
+    padding: 42px 24px;
+    border-radius: 26px;
+  }
+
+  .legal-section {
+    padding: 28px 14px 64px;
+  }
+
+  .legal-card {
+    border-radius: 24px;
+  }
+}

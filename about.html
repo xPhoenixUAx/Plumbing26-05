@@ -1,16 +1,248 @@
-ï»¿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About PlumbConnect | Plumbing Request Aggregator</title><meta name="description" content="About PlumbConnect, a plumbing request aggregator that helps customers organize plumbing needs and connect with independent providers."><link rel="stylesheet" href="css/bundle.css"></head>
-<body>
-  <header class="site-header"><div class="nav"><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-company-name></span></a><nav class="nav-links"><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn secondary" data-phone-link><span data-phone-text></span></a><button class="icon-btn" data-menu-open>Menu</button></div></div></header>
-  <div class="mobile-menu" data-mobile-menu aria-hidden="true"><div class="mobile-menu-inner"><div class="mobile-menu-top"><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-company-name></span></a><button class="icon-btn" data-menu-close>Close</button></div><nav><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><p class="support" data-disclaimer-short></p></div></div>
-  <main>
-    <section class="page-hero"><div class="wrap page-hero-grid"><div data-reveal><span class="eyebrow">About the platform</span><h1>A plumbing request experience built for clarity before contractor contact.</h1><p>PlumbConnect is an aggregator, not a plumbing contractor. The site helps customers frame a plumbing issue, understand service categories, and request contact from independent providers in participating areas.</p></div><div class="service-hero-img" data-reveal><img src="img/home/hero-provider.png" alt="Close-up of plumbing installation work"></div></div></section>
-    <section class="section"><div class="wrap grid-2"><div data-reveal><span class="eyebrow">Positioning</span><h2>Less confusion around plumbing requests.</h2><p>Many customers do not know whether a problem is a drain issue, a leak, a fixture failure, a water heater concern, or a sewer line symptom. The platform is structured to make that first description more useful before an independent provider evaluates the property.</p><p>Provider matching can depend on service category, location, availability, job complexity, equipment needs, licensing, insurance, and provider acceptance. The platform does not perform work, set provider pricing, or guarantee outcomes.</p></div><div class="info-card" data-reveal><h3>Aggregator standards</h3><p data-disclaimer-full></p></div></div></section>
-    <section class="section tight"><div class="wrap"><div class="section-head"><span class="eyebrow">Principles</span><h2>Built around practical request quality.</h2></div><div class="values-list"><article class="info-card" data-reveal><h3>Transparent role</h3><p>The platform language separates request routing from contractor work so customers understand who is responsible for service terms.</p></article><article class="info-card" data-reveal><h3>Useful service education</h3><p>Each service page explains symptoms, preparation details, and provider questions without pretending to diagnose a property remotely.</p></article><article class="info-card" data-reveal><h3>Customer control</h3><p>Customers can compare provider conversations, confirm credentials, review estimates, and decide whether to authorize work.</p></article></div></div></section>
-    <section class="section"><div class="wrap"><div class="cta-panel" data-reveal><span class="eyebrow">Get matched</span><h2>Start with a clear plumbing request.</h2><p data-disclaimer-short></p><div class="button-row"><a class="btn primary" href="contact.html">Request provider options</a><a class="btn secondary" href="services.html">View services</a></div></div></div></section>
+<body class="home-blue">
+  <div class="top-strip">
+    <span><i data-lucide="clock-3"></i>Request intake available daily</span>
+    <span><i data-lucide="map-pin"></i>Participating local provider areas</span>
+    <span><i data-lucide="shield-check"></i><span data-company-id></span></span>
+  </div>
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name>PlumbConnect</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-dropdown">
+          <a class="nav-drop-trigger" href="services.html">Services <i data-lucide="chevron-down"></i></a>
+          <div class="nav-drop-menu">
+            <a href="services/emergency-plumbing.html">Emergency Plumbing</a>
+            <a href="services/drain-cleaning.html">Drain Cleaning</a>
+            <a href="services/leak-detection.html">Leak Detection</a>
+            <a href="services/water-heaters.html">Water Heaters</a>
+            <a href="services/sewer-line.html">Sewer Line</a>
+            <a href="services/fixture-installation.html">Fixture Installation</a>
+            <a class="all-services-link" href="services.html">All Services</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="phone-mini" data-phone-link><i data-lucide="phone-call"></i><span data-phone-text></span></a><span class="nav-divider" aria-hidden="true"></span><a class="btn schedule-btn" href="contact.html">Schedule Online <span><i data-lucide="arrow-up-right"></i></span></a><button class="icon-btn" data-menu-open aria-label="Open menu" aria-expanded="false">Menu</button></div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-top"><a class="brand" href="index.html"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name></span></a><button class="icon-btn" data-menu-close aria-label="Close menu">Close</button></div>
+      <nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <p class="support" data-disclaimer-short></p>
+    </div>
+  </div>
+<main>
+    <section class="about-hero">
+      <div class="about-hero-panel" data-reveal>
+        <div class="about-hero-bg" aria-hidden="true"></div>
+        <img class="about-hero-float about-float-left" src="img/home/assurance-handshake.png" alt="Homeowner discussing plumbing request details">
+        <img class="about-hero-float about-float-right" src="img/home/process-request.png" alt="Plumbing request being reviewed beside tools">
+        <span class="about-dot dot-a"></span>
+        <span class="about-dot dot-b"></span>
+        <span class="about-dot dot-c"></span>
+        <div class="about-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><strong>About</strong></nav>
+          <h1>About Us</h1>
+          <p>PlumbConnect helps homeowners organize plumbing problems into clearer requests before speaking with independent local providers. The platform is not a plumbing contractor and does not perform the work.</p>
+          <div class="about-hero-checks">
+            <span><i data-lucide="check-circle-2"></i>Independent provider requests</span>
+            <span><i data-lucide="check-circle-2"></i>Clear service categories</span>
+            <span><i data-lucide="check-circle-2"></i>Customer verification reminders</span>
+            <span><i data-lucide="check-circle-2"></i>Provider terms confirmed directly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-story-section">
+      <div class="about-story-panel" data-reveal>
+        <div class="about-story-media">
+          <img class="story-photo-main" src="img/home/scenario-leak-before.png" alt="Water-stained wall being checked before plumbing provider contact">
+          <img class="story-photo-secondary" src="img/home/scenario-leak-after.png" alt="Under-sink shutoff valve being identified for a plumbing request">
+          <span class="story-mark">P</span>
+        </div>
+        <div class="about-story-copy">
+          <span class="eyebrow">Our Story</span>
+          <h2>Built to make plumbing requests simpler and more honest</h2>
+          <p>PlumbConnect was created for the moment when a homeowner sees a leak, clog, cold water issue, or fixture problem and does not know how to describe it clearly to a provider.</p>
+          <p>The platform helps turn scattered symptoms into a better request: service category, urgency, location context, photos, access notes, and questions to confirm before hiring an independent contractor.</p>
+          <a class="btn cyan read-more-btn" href="services.html">See service categories <span><i data-lucide="arrow-up-right"></i></span></a>
+        </div>
+      </div>
+    </section>
+    <section class="about-values-section">
+      <div class="wrap" data-reveal>
+        <div class="about-values-head">
+          <span class="eyebrow">Core Values</span>
+          <h2>What we stand for as a plumbing request platform</h2>
+        </div>
+        <div class="about-values-grid">
+          <article class="about-value-card">
+            <i data-lucide="shield-check"></i>
+            <h3>Clear Platform Role</h3>
+            <p>The site helps organize requests and connect customers with independent providers; it does not perform plumbing work.</p>
+          </article>
+          <article class="about-value-card">
+            <i data-lucide="home"></i>
+            <h3>Respect for Context</h3>
+            <p>Requests focus on symptoms, property access, urgency, photos, and details providers need before a useful conversation.</p>
+          </article>
+          <article class="about-value-card">
+            <i data-lucide="clipboard-check"></i>
+            <h3>Verify Before Hiring</h3>
+            <p>Customers are reminded to confirm license, insurance, reviews, estimates, warranty terms, and scope directly.</p>
+          </article>
+          <article class="about-value-card">
+            <i data-lucide="badge-dollar-sign"></i>
+            <h3>Pricing Transparency</h3>
+            <p>Planning ranges are educational only. Final pricing and service terms come from the independent provider.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about-trust-section">
+      <div class="about-trust-panel" data-reveal>
+        <div class="about-trust-bg" aria-hidden="true"></div>
+        <div class="about-trust-head">
+          <span class="eyebrow">Trusted Guidance</span>
+          <h2>Peace of mind starts with the right questions</h2>
+        </div>
+        <div class="about-trust-cards">
+          <article class="about-trust-card">
+            <span class="trust-icon"><i data-lucide="file-check-2"></i></span>
+            <div>
+              <h3>Written Scope Before Approval</h3>
+              <p>Customers should confirm inspection notes, likely scope, pricing terms, exclusions, and who is responsible for permits or parts before authorizing work.</p>
+            </div>
+          </article>
+          <article class="about-trust-card">
+            <span class="trust-icon"><i data-lucide="badge-check"></i></span>
+            <div>
+              <h3>License, Insurance & Warranty Terms</h3>
+              <p>Any warranty, workmanship promise, insurance status, and license requirement should be verified directly with the independent provider before hiring.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about-choice-section">
+      <div class="about-choice-panel" data-reveal>
+        <div class="about-choice-copy">
+          <span class="eyebrow">Right Choice</span>
+          <h2>Why homeowners use PlumbConnect</h2>
+          <div class="choice-list">
+            <span><i data-lucide="check-circle-2"></i><strong>Clear request categories</strong> for leaks, drains, heaters, sewer lines, and fixtures.</span>
+            <span><i data-lucide="check-circle-2"></i><strong>Better provider conversations</strong> with symptoms, urgency, access notes, and photos prepared.</span>
+            <span><i data-lucide="check-circle-2"></i><strong>Verification reminders</strong> for license, insurance, written estimates, scope, and warranty terms.</span>
+            <span><i data-lucide="check-circle-2"></i><strong>Transparent aggregator role</strong> so customers know the site does not perform or guarantee contractor work.</span>
+          </div>
+          <a class="btn cyan read-more-btn" href="contact.html">Start a request <span><i data-lucide="arrow-up-right"></i></span></a>
+        </div>
+        <div class="about-choice-media">
+          <img src="img/home/scenario-drain-after.png" alt="Cleanout access being reviewed for a plumbing request">
+          <div class="choice-rating">
+            <span class="rating-mark">G</span>
+            <strong>4.8</strong>
+            <div><span class="stars">?????</span><small>Based on request experiences</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-process-section">
+      <div class="wrap" data-reveal>
+        <div class="about-process-head">
+          <span class="eyebrow">How it Works</span>
+          <h2>How the request process works</h2>
+        </div>
+        <div class="about-process-flow">
+          <article class="about-process-node">
+            <div class="about-process-icon"><i data-lucide="clipboard-list"></i><span>01</span></div>
+            <h3>Submit Request</h3>
+            <p>Share the plumbing category, symptoms, photos, location context, and urgency.</p>
+          </article>
+          <span class="about-flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="about-process-node">
+            <div class="about-process-icon"><i data-lucide="list-filter"></i><span>02</span></div>
+            <h3>Organize Details</h3>
+            <p>The request is shaped into clearer context for an independent provider conversation.</p>
+          </article>
+          <span class="about-flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="about-process-node">
+            <div class="about-process-icon"><i data-lucide="messages-square"></i><span>03</span></div>
+            <h3>Discuss Options</h3>
+            <p>Providers may explain availability, inspection needs, likely scope, and pricing terms.</p>
+          </article>
+          <span class="about-flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="about-process-node">
+            <div class="about-process-icon"><i data-lucide="shield-check"></i><span>04</span></div>
+            <h3>Verify Provider</h3>
+            <p>Confirm license, insurance, reviews, estimate details, exclusions, and warranty language.</p>
+          </article>
+          <span class="about-flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="about-process-node">
+            <div class="about-process-icon"><i data-lucide="hand-coins"></i><span>05</span></div>
+            <h3>Decide Directly</h3>
+            <p>The customer chooses whether to hire and agrees to final terms with the provider.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta-section">
+      <div class="final-cta-panel" data-reveal>
+        <div class="final-cta-image">
+          <img src="img/home/scenario-leak-after.png" alt="Under-sink plumbing shutoff valve being reviewed">
+          <span class="final-cta-mark">P</span>
+        </div>
+        <div class="final-cta-copy">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Ready to start a clearer plumbing request?</h2>
+          <div class="final-cta-actions">
+            <a class="phone-cta" data-phone-link><i data-lucide="phone"></i><span data-phone-text></span></a>
+            <p>Call or start online to organize the service category, urgency, and details before speaking with independent provider options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-grid"><div class="footer-col"><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-company-name></span></a><p data-footer-text-primary></p><p data-disclaimer-short></p></div><div class="footer-col"><strong>Services</strong><a href="services/drain-cleaning.html">Drain cleaning</a><a href="services/leak-detection.html">Leak detection</a><a href="services/water-heaters.html">Water heaters</a></div><div class="footer-col"><strong>Company</strong><a href="services.html">Services</a><a href="contact.html">Contact</a></div><div class="footer-col"><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie.html">Cookie</a></div></div><p class="site-disclaimer" data-disclaimer-full></p><div class="wrap footer-bottom"><span>(c) <span data-current-year></span> <span data-company-name></span></span><span data-company-id></span></div></footer>
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a class="brand footer-brand" href="index.html"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name></span></a>
+          <p data-footer-text-primary></p>
+        </div>
+        <div class="footer-col">
+          <strong>Navigation</strong>
+          <a href="index.html"><i data-lucide="arrow-right"></i>Home</a>
+          <a href="about.html"><i data-lucide="arrow-right"></i>About</a>
+          <a href="services.html"><i data-lucide="arrow-right"></i>Services</a>
+          <a href="contact.html"><i data-lucide="arrow-right"></i>Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong>Contact Info</strong>
+          <a data-phone-link><i data-lucide="phone"></i><span data-phone-text></span></a>
+          <a data-email-link><i data-lucide="mail"></i><span data-email-text></span></a>
+          <span><i data-lucide="map-pin"></i><span data-company-address></span></span>
+        </div>
+        <div class="footer-col">
+          <strong>Open Hours</strong>
+          <span><i data-lucide="clock-3"></i><span data-business-hours></span></span>
+          <p>Request intake is available online. Provider availability varies by service area, timing, and category.</p>
+          <span class="footer-license" data-company-id></span>
+        </div>
+      </div>
+      <p class="site-disclaimer" data-disclaimer-full></p>
+      <div class="footer-bottom"><span>(c) <span data-current-year></span> <span data-company-name></span>. All rights reserved.</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a> · <a href="cookie.html">Cookies</a></span></div>
+      <div class="footer-big-mark" aria-hidden="true">P</div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="js/site-config.js"></script><script src="js/main.js"></script>
 </body></html>
 

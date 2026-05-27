@@ -1,4 +1,4 @@
-ï»¿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -15,7 +15,7 @@
   </div>
   <header class="site-header">
     <div class="nav">
-      <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark">P</span><span data-company-name>PlumbConnect</span></a>
+      <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name>PlumbConnect</span></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -39,13 +39,12 @@
 
   <div class="mobile-menu" data-mobile-menu aria-hidden="true">
     <div class="mobile-menu-inner">
-      <div class="mobile-menu-top"><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-company-name></span></a><button class="icon-btn" data-menu-close aria-label="Close menu">Close</button></div>
-      <nav><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="mobile-menu-top"><a class="brand" href="index.html"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name></span></a><button class="icon-btn" data-menu-close aria-label="Close menu">Close</button></div>
+      <nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
       <p class="support" data-disclaimer-short></p>
     </div>
   </div>
-
-  <main>
+<main>
     <section class="hero hero-blue">
       <div class="hero-blue-card">
         <div class="hero-blue-copy" data-reveal>
@@ -154,26 +153,266 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap about-slab">
-        <div data-reveal>
-          <span class="eyebrow">About us</span>
-          <h2>A plumbing aggregator built to narrow the search, not pretend to be the contractor.</h2>
-          <p>PlumbConnect exists for the moment when a homeowner knows something is wrong but does not know which company to call, what details matter, or how urgent the situation is. Instead of offering a single in-house crew, the platform helps route requests toward independent providers from a broader service network.</p>
-          <p>The goal is speed with better context: help customers move from hundreds or thousands of possible companies toward providers that may be able to respond, discuss the right category of work, and explain their own terms directly.</p>
+    <section class="estimate-section">
+      <div class="estimate-panel" data-reveal>
+        <div class="estimate-bg" aria-hidden="true"></div>
+        <div class="estimate-head">
+          <span class="eyebrow">Price Estimation</span>
+          <h2>Instant Plumbing Estimate</h2>
+          <p>Get a planning range in seconds. Final pricing is set by independent providers after inspection, availability, parts, and site conditions are confirmed.</p>
         </div>
-        <div class="info-card" data-reveal>
-          <h3>Why it builds trust</h3>
-          <p>Customers stay responsible for choosing who to hire. That means checking licenses, insurance, reviews, estimates, and warranties before authorizing work. PlumbConnect keeps that distinction clear on every page.</p>
+        <div class="estimate-card" data-estimator>
+          <div class="estimate-fields">
+            <label>Service Type
+              <select data-estimate-service>
+                <option value="emergency">Emergency plumbing</option>
+                <option value="drain">Drain cleaning</option>
+                <option value="leak">Leak detection</option>
+                <option value="heater">Water heater</option>
+                <option value="sewer">Sewer line</option>
+                <option value="fixture">Fixture installation</option>
+              </select>
+            </label>
+            <label>Urgency
+              <select data-estimate-urgency>
+                <option value="standard">Standard</option>
+                <option value="soon">Same / next day</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </label>
+            <label>Property Type
+              <select data-estimate-property>
+                <option value="home">Single-family home</option>
+                <option value="condo">Condo / apartment</option>
+                <option value="commercial">Light commercial</option>
+              </select>
+            </label>
+          </div>
+          <div class="estimate-actions">
+            <button class="estimate-btn" type="button" data-estimate-button>See Estimated Range <span><i data-lucide="arrow-up-right"></i></span></button>
+            <div class="estimate-result">Estimated planning range: <strong data-estimate-result>$280-$750</strong></div>
+          </div>
+          <div class="estimate-ranges">
+            <h3>Typical Request Ranges</h3>
+            <div><strong>Drain cleaning:</strong> $95-$450</div>
+            <div><strong>Water heater repair:</strong> $220-$750</div>
+            <div><strong>Leak detection:</strong> $180-$650</div>
+            <div><strong>Water heater install:</strong> $1,200-$2,800</div>
+            <div><strong>Fixture installation:</strong> $120-$650 + parts</div>
+            <div><strong>Sewer line service:</strong> $250-$1,200+</div>
+          </div>
+          <p class="estimate-note">Disclaimer: Estimates are planning ranges only and are not final quotes. Provider pricing may vary by inspection findings, permits, parts, access, after-hours timing, and local requirements.</p>
         </div>
       </div>
     </section>
 
-    <section class="section tight">
+    <section class="process-flow-section">
+      <div class="wrap" data-reveal>
+        <div class="process-flow-head">
+          <span class="eyebrow">How it Works</span>
+          <h2>How the plumbing request process works</h2>
+        </div>
+        <div class="process-flow">
+          <article class="process-node">
+            <div class="process-icon"><i data-lucide="clipboard-list"></i><span>01</span></div>
+            <h3>Submit Request</h3>
+            <p>Share the service type, location context, urgency, and visible symptoms.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="process-node">
+            <div class="process-icon"><i data-lucide="list-filter"></i><span>02</span></div>
+            <h3>Category Match</h3>
+            <p>The request is organized by plumbing category and likely next-step needs.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="process-node">
+            <div class="process-icon"><i data-lucide="messages-square"></i><span>03</span></div>
+            <h3>Provider Contact</h3>
+            <p>Independent providers may discuss availability, inspection, and pricing terms.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="process-node">
+            <div class="process-icon"><i data-lucide="shield-check"></i><span>04</span></div>
+            <h3>Verify Details</h3>
+            <p>Check license, insurance, reviews, written estimates, and warranty language.</p>
+          </article>
+          <span class="flow-arrow" aria-hidden="true"><i data-lucide="corner-down-right"></i></span>
+          <article class="process-node">
+            <div class="process-icon"><i data-lucide="badge-dollar-sign"></i><span>05</span></div>
+            <h3>Choose Provider</h3>
+            <p>The homeowner decides whether to hire and confirms final terms directly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scenario-section">
+      <div class="wrap" data-reveal>
+        <div class="scenario-head">
+          <span class="eyebrow">Before & After</span>
+          <h2>Real plumbing symptoms. Clearer request context.</h2>
+        </div>
+        <div class="scenario-slider" data-scenario-slider>
+          <div class="scenario-pair is-active" data-scenario-slide>
+            <article class="scenario-card">
+              <img src="img/home/scenario-leak-before.png" alt="Moisture meter checking a water-stained wall beside under-sink plumbing">
+              <h3>Water stain with no visible pipe source</h3>
+            </article>
+            <article class="scenario-card">
+              <img src="img/home/scenario-leak-after.png" alt="Dry under-sink plumbing with shutoff valve being identified">
+              <h3>Shutoff location and inspection questions documented</h3>
+            </article>
+          </div>
+          <div class="scenario-pair" data-scenario-slide>
+            <article class="scenario-card">
+              <img src="img/home/scenario-drain-before.png" alt="Backed-up under-sink drain with bucket and drain cable">
+              <h3>Slow sink with backup water under the cabinet</h3>
+            </article>
+            <article class="scenario-card">
+              <img src="img/home/scenario-drain-after.png" alt="Exterior cleanout access with inspection camera cable">
+              <h3>Cleanout access prepared for main-line review</h3>
+            </article>
+          </div>
+          <div class="scenario-pair" data-scenario-slide>
+            <article class="scenario-card">
+              <img src="img/home/scenario-heater-before.png" alt="Water heater with moisture near the tank base being checked by flashlight">
+              <h3>Moisture at tank base with age and repair questions</h3>
+            </article>
+            <article class="scenario-card">
+              <img src="img/home/scenario-heater-after.png" alt="Water heater connections being reviewed with checklist and tools">
+              <h3>Connection, access, and replacement questions prepared</h3>
+            </article>
+          </div>
+        </div>
+        <div class="scenario-dots" aria-label="Before and after examples">
+          <button class="is-active" type="button" data-scenario-dot aria-label="Show leak example"></button>
+          <button type="button" data-scenario-dot aria-label="Show drain example"></button>
+          <button type="button" data-scenario-dot aria-label="Show water heater example"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section">
+      <div class="wrap" data-reveal>
+        <div class="reviews-head">
+          <span class="eyebrow">Client Reviews</span>
+          <h2>Trusted feedback from homeowners comparing provider options</h2>
+        </div>
+        <div class="rating-summary">
+          <span class="rating-mark">G</span>
+          <strong>4.8</strong>
+          <span class="stars" aria-label="Five star rating">?????</span>
+          <span>Based on 327 request experiences</span>
+          <a href="contact.html">Start Your Request</a>
+        </div>
+        <div class="review-carousel" data-review-carousel>
+          <div class="review-grid" data-review-track>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“The intake made it easier to explain the leak before calling anyone. I knew what details to ask about.”</p>
+              <div class="review-person">
+                <span class="avatar">AR</span>
+                <div><strong>Amanda R.</strong><span>Homeowner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“The water heater page helped me separate repair questions from replacement questions before provider calls.”</p>
+              <div class="review-person">
+                <span class="avatar">DM</span>
+                <div><strong>Derrick M.</strong><span>Property manager</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“I liked that the site was clear about verifying license, insurance, and estimates before hiring.”</p>
+              <div class="review-person">
+                <span class="avatar">LP</span>
+                <div><strong>Lisa P.</strong><span>Homeowner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“The drain category helped me describe where the backup started instead of guessing what service I needed.”</p>
+              <div class="review-person">
+                <span class="avatar">NC</span>
+                <div><strong>Natalie C.</strong><span>Homeowner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“The estimate range was useful as planning context, and the disclaimer made the limits clear.”</p>
+              <div class="review-person">
+                <span class="avatar">JW</span>
+                <div><strong>James W.</strong><span>Landlord</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“I used the sewer line page to prepare photos and cleanout details before provider conversations.”</p>
+              <div class="review-person">
+                <span class="avatar">MH</span>
+                <div><strong>Maria H.</strong><span>Homeowner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“The reminder to confirm insurance and written estimates was exactly what I needed before choosing.”</p>
+              <div class="review-person">
+                <span class="avatar">KT</span>
+                <div><strong>Kevin T.</strong><span>Condo owner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+            <article class="review-card">
+              <span class="stars">?????</span>
+              <p>“It helped me turn a vague fixture issue into a clear request with photos, location, and parts questions.”</p>
+              <div class="review-person">
+                <span class="avatar">SO</span>
+                <div><strong>Sofia O.</strong><span>Homeowner</span></div>
+              </div>
+              <i data-lucide="quote"></i>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="availability-section">
+      <div class="availability-panel" data-reveal>
+        <div class="availability-bg" aria-hidden="true"></div>
+        <img class="availability-float float-one" src="img/home/scenario-heater-after.png" alt="Water heater connection review">
+        <img class="availability-float float-two" src="img/home/service-drain.png" alt="Drain tool under a sink">
+        <img class="availability-float float-three" src="img/home/hero-provider.png" alt="Plumbing provider holding a tool">
+        <img class="availability-float float-four" src="img/home/service-fixture.png" alt="Fixture connection detail">
+        <span class="availability-dot dot-one"></span>
+        <span class="availability-dot dot-two"></span>
+        <span class="availability-dot dot-three"></span>
+        <span class="availability-dot dot-four"></span>
+        <div class="availability-content">
+          <span class="eyebrow">Service Area</span>
+          <h2>Check plumbing provider availability in your area</h2>
+          <p>Enter a ZIP code to start a local request path and see whether provider conversations may be available for your service category.</p>
+          <form class="zip-form" data-zip-form>
+            <input type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter ZIP code (e.g., 78701)" aria-label="ZIP code" data-zip-input>
+            <button type="submit">Check Now <span><i data-lucide="arrow-up-right"></i></span></button>
+          </form>
+          <p class="zip-result" data-zip-result>Availability depends on provider coverage, timing, service type, and customer verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
       <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">FAQ</span>
-          <h2>Common questions before submitting a request.</h2>
+        <div class="faq-head" data-reveal>
+          <span class="eyebrow">FAQs</span>
+          <h2>Answers to your frequently asked questions</h2>
         </div>
         <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
           <div class="faq-item" data-faq-item itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -192,31 +431,66 @@
             <button aria-expanded="false" itemprop="name">Should homeowners verify license and insurance?<span>+</span></button>
             <div class="faq-panel" data-faq-panel itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes. The homeowner is responsible for verifying that any hired contractor has the license and insurance required for the work being performed.</p></div>
           </div>
+          <div class="faq-item" data-faq-item itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <button aria-expanded="false" itemprop="name">What service categories can customers request?<span>+</span></button>
+            <div class="faq-panel" data-faq-panel itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Customers can start requests for emergency plumbing, drain cleaning, leak detection, water heaters, sewer line concerns, and fixture installation categories.</p></div>
+          </div>
+          <div class="faq-item" data-faq-item itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <button aria-expanded="false" itemprop="name">How quickly can a provider contact a customer?<span>+</span></button>
+            <div class="faq-panel" data-faq-panel itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Contact timing depends on provider availability, service area coverage, urgency, and the details submitted in the request. The site does not guarantee response times.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="cta-panel" data-reveal>
-          <span class="eyebrow">Start a request</span>
-          <h2>Need a provider conversation for a plumbing problem?</h2>
-          <p data-disclaimer-short></p>
-          <div class="button-row"><a class="btn primary" href="contact.html">Get Free Estimate</a><a class="btn secondary" data-phone-link><span data-phone-text></span></a></div>
+    <section class="final-cta-section">
+      <div class="final-cta-panel" data-reveal>
+        <div class="final-cta-image">
+          <img src="img/home/service-emergency.png" alt="Under-sink plumbing issue being inspected">
+          <span class="final-cta-mark">P</span>
+        </div>
+        <div class="final-cta-copy">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Need help finding plumbing provider options?</h2>
+          <div class="final-cta-actions">
+            <a class="phone-cta" data-phone-link><i data-lucide="phone"></i><span data-phone-text></span></a>
+            <p>Start a request for urgent or planned plumbing categories. Provider availability, response timing, and final terms vary by location.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-col"><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-company-name></span></a><p data-footer-text-primary></p><p data-company-address></p></div>
-      <div class="footer-col"><strong>Services</strong><a href="services/emergency-plumbing.html">Emergency plumbing</a><a href="services/drain-cleaning.html">Drain cleaning</a><a href="services/leak-detection.html">Leak detection</a><a href="services/water-heaters.html">Water heaters</a></div>
-      <div class="footer-col"><strong>Contact</strong><a data-phone-link><span data-phone-text></span></a><a data-email-link><span data-email-text></span></a><a data-whatsapp-link><span data-whatsapp-text></span></a></div>
-      <div class="footer-col"><strong>Legal</strong><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookie.html">Cookie Policy</a></div>
+    <div class="footer-panel">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a class="brand footer-brand" href="index.html"><span class="brand-mark"><img src="img/plumbconnect-logo-mark.svg" alt="" aria-hidden="true"></span><span data-company-name></span></a>
+          <p data-footer-text-primary></p>
+        </div>
+        <div class="footer-col">
+          <strong>Navigation</strong>
+          <a href="index.html"><i data-lucide="arrow-right"></i>Home</a>
+          <a href="about.html"><i data-lucide="arrow-right"></i>About</a>
+          <a href="services.html"><i data-lucide="arrow-right"></i>Services</a>
+          <a href="contact.html"><i data-lucide="arrow-right"></i>Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong>Contact Info</strong>
+          <a data-phone-link><i data-lucide="phone"></i><span data-phone-text></span></a>
+          <a data-email-link><i data-lucide="mail"></i><span data-email-text></span></a>
+          <span><i data-lucide="map-pin"></i><span data-company-address></span></span>
+        </div>
+        <div class="footer-col">
+          <strong>Open Hours</strong>
+          <span><i data-lucide="clock-3"></i><span data-business-hours></span></span>
+          <p>Request intake is available online. Provider availability varies by service area, timing, and category.</p>
+          <span class="footer-license" data-company-id></span>
+        </div>
+      </div>
+      <p class="site-disclaimer" data-disclaimer-full></p>
+      <div class="footer-bottom"><span>(c) <span data-current-year></span> <span data-company-name></span>. All rights reserved.</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a> · <a href="cookie.html">Cookies</a></span></div>
+      <div class="footer-big-mark" aria-hidden="true">P</div>
     </div>
-    <p class="site-disclaimer" data-disclaimer-full></p>
-    <div class="wrap footer-bottom"><span>(c) <span data-current-year></span> <span data-company-name></span></span><span data-company-id></span></div>
   </footer>
   <a class="sticky-call" data-sticky-call data-phone-link><span>Call</span></a>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
