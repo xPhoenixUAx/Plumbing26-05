@@ -350,7 +350,7 @@ h3 { font-size: var(--fs-h3); }
   min-height: 790px;
   background:
     linear-gradient(90deg, rgba(10, 30, 38, .82), rgba(10, 30, 38, .34) 50%, rgba(245, 248, 248, .7)),
-    url("../img/home/hero-provider.png") center / cover no-repeat;
+    url("../img/home/hero-provider.webp") center / cover no-repeat;
   color: white;
 }
 .hero.hero-trust p { color: rgba(255,255,255,.82); }
@@ -791,7 +791,7 @@ h3 { font-size: var(--fs-h3); }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(31,88,166,.93), rgba(31,91,174,.9)),
-    url("../img/home/assurance-pipes.png") center / cover no-repeat;
+    url("../img/home/assurance-pipes.webp") center / cover no-repeat;
 }
 .about-hero-content {
   position: relative;
@@ -920,7 +920,7 @@ h3 { font-size: var(--fs-h3); }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(31,88,166,.93), rgba(31,91,174,.9)),
-    url("../img/home/assurance-pipes.png") center / cover no-repeat;
+    url("../img/home/assurance-pipes.webp") center / cover no-repeat;
 }
 .services-hero-content {
   position: relative;
@@ -985,7 +985,7 @@ h3 { font-size: var(--fs-h3); }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(31,88,166,.93), rgba(31,91,174,.9)),
-    url("../img/home/assurance-pipes.png") center / cover no-repeat;
+    url("../img/home/assurance-pipes.webp") center / cover no-repeat;
 }
 .contact-hero-content {
   position: relative;
@@ -1387,7 +1387,7 @@ h3 { font-size: var(--fs-h3); }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(31,88,166,.94), rgba(31,91,174,.9)),
-    url("../img/home/assurance-pipes.png") center / cover no-repeat;
+    url("../img/home/assurance-pipes.webp") center / cover no-repeat;
 }
 .service-detail-hero-panel::after {
   content: "";
@@ -1863,7 +1863,7 @@ h3 { font-size: var(--fs-h3); }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(34,94,176,.92), rgba(36,96,178,.88)),
-    url("../img/home/scenario-heater-before.png") center / cover no-repeat;
+    url("../img/home/scenario-heater-before.webp") center / cover no-repeat;
 }
 .about-trust-head {
   position: relative;
@@ -2234,7 +2234,7 @@ h3 { font-size: var(--fs-h3); }
   border-radius: 46px;
   background:
     linear-gradient(90deg, rgba(28,86,164,.9), rgba(25,83,159,.94)),
-    url("../img/home/scenario-heater-after.png") center / cover no-repeat;
+    url("../img/home/scenario-heater-after.webp") center / cover no-repeat;
   color: white;
 }
 .final-cta-image {
@@ -3422,7 +3422,7 @@ textarea:focus-visible {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(29,88,168,.92), rgba(34,97,177,.88)),
-    url("../img/home/service-leak.png") center / cover no-repeat;
+    url("../img/home/service-leak.webp") center / cover no-repeat;
   filter: saturate(.9);
 }
 .estimate-panel::before,
@@ -4887,7 +4887,7 @@ textarea:focus-visible {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(26,82,158,.92), rgba(28,93,176,.9)),
-    url("../img/home/scenario-drain-before.png") center / cover no-repeat;
+    url("../img/home/scenario-drain-before.webp") center / cover no-repeat;
   opacity: 1;
 }
 .availability-content {
