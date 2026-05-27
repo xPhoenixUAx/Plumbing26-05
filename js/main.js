@@ -8,11 +8,14 @@
       "company-name": config.companyName,
       "company-id": config.companyId,
       "company-address": [config.addressLine1, config.addressLine2, config.serviceArea].filter(Boolean).join(" - "),
+      "top-notice": config.topNotice,
+      "top-area-label": config.topAreaLabel,
       "footer-text-primary": config.footerTextPrimary,
       "footer-text-secondary": config.footerTextSecondary,
       "disclaimer-short": config.disclaimerShort,
       "disclaimer-full": config.disclaimerFull,
-      "business-hours": config.businessHours
+      "business-hours": config.businessHours,
+      "copyright-line": `(c) ${new Date().getFullYear()} ${config.copyrightLine || `${config.companyName || ""}. All rights reserved.`}`
     };
 
     Object.entries(map).forEach(([key, value]) => {
@@ -40,9 +43,6 @@
     });
     $$("[data-whatsapp-text]").forEach((el) => {
       el.textContent = config.whatsappDisplay || "WhatsApp";
-    });
-    $$("[data-current-year]").forEach((el) => {
-      el.textContent = new Date().getFullYear();
     });
   }
 

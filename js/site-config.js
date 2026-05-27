@@ -8,6 +8,8 @@ window.SITE_CONFIG = {
   email: "requests@plumbconnect.example",
   whatsapp: "+15550192774",
   whatsappDisplay: "WhatsApp",
+  topNotice: "Request intake available daily",
+  topAreaLabel: "Participating local provider areas",
   addressLine1: "Lead coordination desk",
   addressLine2: "No public storefront",
   serviceArea: "Connecting homeowners, property managers, and small businesses with independent plumbing providers in participating service areas",
